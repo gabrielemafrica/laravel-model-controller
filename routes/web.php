@@ -20,3 +20,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [ PageController :: class, 'index']) -> name('home');
+
+Route::post('/', [PageController::class, 'store'])->name('add.movie');
+
+// destroy
+Route::delete('/movies/{id}', [PageController::class, 'destroy'])->name('movies.destroy');
+
+
