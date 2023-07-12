@@ -1,3 +1,3 @@
-<footer class="text-center bg-light">
-    <h1>questo è footer</h1>
+<footer class="text-center bg-warning  py-4 text-white">
+    <h1>questo è il mio footer</h1>
 </footer>
