@@ -12,7 +12,12 @@ use App\Models\Movie;
 class PageController extends Controller
 {
     public function index() {
-        $movies = Movie::all();
+        // $movies = Movie::all();
+        // $movies = Movie::all() -> where();
+        // $movies = Movie::all() -> orderBy();
+        $movies = Movie::orderBy('title')->get();
+        // $movies = Movie::where('title',  'like','%Forrest%')->get();
+        // $movies = Movie::where('id', 1)->orderBy()->get();
         return view('home', compact('movies'));
     }
     public function store(Request $request) {

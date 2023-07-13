@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container bg-light">
+    <div class="container bg-light flex-wrap bg-body">
 
     </div>
 </body>
